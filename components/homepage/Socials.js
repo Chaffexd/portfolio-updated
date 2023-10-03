@@ -6,14 +6,14 @@ const Socials = () => {
   return (
     <>
       <Link
-        href={"https://github.com/Chaffexd"}
+        href={"https://www.linkedin.com/in/shane-chaffe/"}
         target="_blank"
         className="w-8 fill-zinc-500 hover:fill-zinc-600"
       >
         <LinkedInIcon />
       </Link>
       <Link
-        href={"https://www.linkedin.com/in/shane-chaffe/"}
+        href={"https://github.com/Chaffexd"}
         target="_blank"
         className="w-8 fill-zinc-500 transition hover:fill-zinc-600"
       >
