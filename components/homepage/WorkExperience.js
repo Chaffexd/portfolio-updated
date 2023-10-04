@@ -14,24 +14,28 @@ const WorkExperience = () => {
           role={"Customer Support Engineer"}
           startDate={"2023"}
           endDate={"Present"}
+          source={"/images/contentful.svg"}
         />
         <WorkItem
           company={"Sauce Labs"}
           role={"Customer Support Engineer"}
           startDate={"2022"}
           endDate={"2023"}
+          source={"/images/saucelabs.svg"}
         />
         <WorkItem
           company={"OneTrust"}
           role={"Customer Support Engineer"}
           startDate={"2021"}
           endDate={"2022"}
+          source={"/images/onetrust.svg"}
         />
         <WorkItem
           company={"Apple"}
           role={"Genius"}
           startDate={"2017"}
           endDate={"2021"}
+          source={"/images/apple.svg"}
         />
       </ol>
     </div>

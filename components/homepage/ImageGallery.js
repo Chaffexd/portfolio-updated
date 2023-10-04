@@ -7,7 +7,7 @@ const ImageGallery = () => {
         <Image
           src={"/images/me.jpeg"}
           className="h-full w-full object-cover"
-          alt=""
+          alt="A photo"
           width={5760}
           height={3840}
         />
@@ -16,7 +16,7 @@ const ImageGallery = () => {
         <Image
           src={"/images/me.jpeg"}
           className="h-full w-full object-cover"
-          alt=""
+          alt="A photo"
           width={400}
           height={400}
         />
@@ -25,7 +25,7 @@ const ImageGallery = () => {
         <Image
           src={"/images/me.jpeg"}
           className="h-full w-full object-cover"
-          alt=""
+          alt="A photo"
           width={400}
           height={400}
         />
@@ -34,7 +34,7 @@ const ImageGallery = () => {
         <Image
           src={"/images/me.jpeg"}
           className="h-full w-full object-cover"
-          alt=""
+          alt="A photo"
           width={400}
           height={400}
         />
@@ -43,7 +43,7 @@ const ImageGallery = () => {
         <Image
           src={"/images/me.jpeg"}
           className="h-full w-full object-cover"
-          alt=""
+          alt="A photo"
           width={400}
           height={400}
         />
