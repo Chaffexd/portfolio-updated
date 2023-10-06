@@ -1,11 +1,13 @@
 import Post from "./Post"
 
-const BlogPosts = () => {
+const BlogPosts = ({ posts }) => {
+  console.log(posts)
+
   return (
     <div className="space-y-10 lg:pl-16 xl:pl-24 flex flex-col">
-      <Post />
-      <Post />
-      <Post />
+      <Post posts={posts.items[0]} />
+      <Post posts={posts.items[1]} />
+      <Post posts={posts.items[2]} />
     </div>
   )
 }

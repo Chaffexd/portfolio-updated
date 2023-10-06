@@ -6,7 +6,9 @@ import ImageGallery from "./ImageGallery";
 import EmailSignup from "./EmailSignup";
 import BlogPosts from "./BlogPosts";
 
-const Hero = () => {
+const Hero = ({ posts }) => {
+  console.log(posts)
+
   return (
     <section>
       <div className="max-w-2xl mt-16 mx-48">
@@ -36,7 +38,7 @@ const Hero = () => {
       </div>
       <div className="mx-auto w-full max-w-7xl mt-20">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 gap-8">
-          <BlogPosts />
+          <BlogPosts posts={posts} />
           <EmailSignup />
         </div>
       </div>

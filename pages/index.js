@@ -1,14 +1,28 @@
 import { Inter } from 'next/font/google'
 import Hero from '@/components/homepage/Hero'
+import { getAllPosts } from '@/helpers/post-util'
 
 const inter = Inter({ subsets: ['latin'] })
 
 // {inter.className}
 
-export default function Home() {
+export default function Home({ posts }) {
+
+  console.log(process.env.CONTENTFUL_DELIVERY_KEY)
+
   return (
     <>
-      <Hero />
+      <Hero posts={posts} />
     </>
   )
 }
+
+export async function getStaticProps() {
+  const allPosts = await getAllPosts();
+
+  return {
+    props: {
+      posts: allPosts
+    }
+  }
+};

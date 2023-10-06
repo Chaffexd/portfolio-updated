@@ -2,16 +2,12 @@ import PostDetail from "@/components/article/PostDetail";
 import { getAllPosts, getSinglePost } from "@/helpers/post-util";
 
 const PostDetailPage = ({ post }) => {
-  const test = getAllPosts();
-  console.log(test);
 
   return (
-    <div className="mx-auto w-full max-w-7xl lg:px-8">
-      <div className="mx-auto max-w-2xl lg:max-w-5xl">
+    <div className="mx-auto w-full max-w-7xl lg:px-8 mt-20">
+      <div className="mx-12 max-w-1xl lg:max-w-5xl">
         <div className="xl:relative">
-          <div className="mx-auto max-w-2xl">
             <PostDetail post={post} />
-          </div>
         </div>
       </div>
     </div>
@@ -33,8 +29,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { id } = params;
-  const postData = await getSinglePost(id);
+  const { slug } = params;
+  const postData = await getSinglePost(slug);
 
   return {
     props: {

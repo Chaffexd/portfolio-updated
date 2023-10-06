@@ -13,13 +13,17 @@ export async function getAllPosts() {
   return blogPosts;
 }
 
-export async function getSinglePost(id) {
+export async function getSinglePost(slug) {
   const client = createClient({
     accessToken: "cD8nXddmmbBiviPwqREwP7GVe9cjrLxcqAO67fyMvfE",
     space: "svpfxqr57hom",
   });
 
-  const entry = await client.getEntry(id);
+  const entry = await client.getEntries({
+    content_type: "post",
+    "fields.slug[match]": slug,
+  });
+
   return entry;
 }
 
