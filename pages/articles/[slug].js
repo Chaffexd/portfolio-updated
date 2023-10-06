@@ -23,7 +23,7 @@ export default PostDetailPage;
 export async function getStaticPaths() {
   const allPosts = await getAllPosts();
   const paths = allPosts.items.map((post) => ({
-    params: { slug: post.fields.slug, id: post.fields.id },
+    params: { slug: post.fields.slug, },
   }));
 
   return {
