@@ -1,13 +1,35 @@
 import { formatDate } from "@/helpers/post-util";
 import Link from "next/link";
 import LeftChevron from "../icons/LeftChevron";
+
+import Markdown from "react-markdown";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
+import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
+
+SyntaxHighlighter.registerLanguage("js", js);
+
 const PostDetail = ({ post }) => {
-  console.log(post.items[0]);
 
   const { postTitle } = post.items[0].fields;
   const { body } = post.items[0].fields;
 
   const formattedDate = formatDate(post.items[0].fields.postDate);
+
+  const customRenderers = {
+    code(code) {
+      const { className, children } = code;
+      const language = className.split("-")[1];
+
+      return (
+        <SyntaxHighlighter
+          style={atomDark}
+          language={language}
+          children={children}
+        />
+      );
+    }
+  };
 
   return (
     <article>
@@ -21,7 +43,9 @@ const PostDetail = ({ post }) => {
         </time>
       </header>
       <div className="mt-8 prose dark:prose-invert">
-        <p>{body}</p>
+        <Markdown components={customRenderers}>
+          {body}
+        </Markdown>
       </div>
     </article>
   );
