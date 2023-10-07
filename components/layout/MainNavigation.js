@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const MainNavigation = () => {
   return (
-    <header className="flex justify-center mx-48">
+    <header className="max-sm:mx-0 flex justify-center mx-48">
       <nav className="flex mt-6 items-center justify-between min-w-full">
         <div>
           <Link href={"/"} className="hover:text-teal-500">Home</Link>
@@ -16,7 +15,7 @@ const MainNavigation = () => {
           </div>
         </div>
         <div>
-          <p>Toggle</p>
+          <p className="mb-0">Toggle</p>
         </div>
       </nav>
     </header>

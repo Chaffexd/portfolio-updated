@@ -11,7 +11,7 @@ const Hero = ({ posts }) => {
 
   return (
     <section>
-      <div className="max-w-2xl mt-16 mx-48">
+      <div className="max-sm:w-full max-sm:mx-2 max-w-2xl mt-16 mx-48">
         <Link href={"/"} className="block w-1/6 mb-4">
           <Image
             className="rounded-full object-cover h-16 w-16"
@@ -37,7 +37,7 @@ const Hero = ({ posts }) => {
         <ImageGallery />
       </div>
       <div className="mx-auto w-full max-w-7xl mt-20">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 gap-8">
+        <div className="max-sm:mx-2 mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 gap-8">
           <BlogPosts posts={posts} />
           <EmailSignup />
         </div>
