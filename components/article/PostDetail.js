@@ -34,16 +34,16 @@ const PostDetail = ({ post }) => {
   return (
     <article>
       <header className="flex flex-col">
-        <button className="mt-6"><Link href={"/articles/"}><LeftChevron /></Link></button>
-        <h1 className="mt-6 text-4xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        <button className="mt-6 dark:text-white"><Link href={"/articles/"}><LeftChevron /></Link></button>
+        <h1 className="mt-6 text-4xl font-bold text-zinc-800 dark:text-white sm:text-5xl">
           {postTitle}
         </h1>
-        <time className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+        <time className="order-first flex items-center text-base text-zinc-400 dark:text-white">
           {formattedDate}
         </time>
       </header>
       <div className="mt-8">
-        <Markdown components={customRenderers}>
+        <Markdown components={customRenderers} className="dark:text-white">
           {body}
         </Markdown>
       </div>
