@@ -7,7 +7,6 @@ import EmailSignup from "./EmailSignup";
 import BlogPosts from "./BlogPosts";
 
 const Hero = ({ posts }) => {
-  console.log(posts)
 
   return (
     <section>

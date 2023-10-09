@@ -1,7 +1,6 @@
 import Post from "./Post"
 
 const BlogPosts = ({ posts }) => {
-  console.log(posts)
 
   return (
     <div className="space-y-10 lg:pl-16 xl:pl-24 flex flex-col">
