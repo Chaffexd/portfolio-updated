@@ -1,7 +1,7 @@
 import AboutSocials from "@/components/about/AboutSocials";
 import Headshot from "@/components/about/Headshot";
 import Intro from "@/components/about/Intro";
-import React from "react";
+import Head from "next/head";
 
 const AboutPage = () => {
   return (
@@ -9,6 +9,13 @@ const AboutPage = () => {
       <div className="mx-auto w-full max-w-7xl lg:px-8">
         <div className="relative px-4 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+            <Head>
+              <title>Shane Chaffe - About me</title>
+              <meta
+                name="description"
+                content={"The section that talks about who I am"}
+              />
+            </Head>
             <Headshot />
             <Intro />
             <div className="lg:pl-16">
