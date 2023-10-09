@@ -8,8 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ posts }) {
 
-  console.log(process.env.CONTENTFUL_DELIVERY_KEY)
-
   return (
     <>
       <Hero posts={posts} />

@@ -28,7 +28,7 @@ const PostDetail = ({ post }) => {
           children={children}
         />
       );
-    }
+    },
   };
 
   return (
@@ -42,7 +42,7 @@ const PostDetail = ({ post }) => {
           {formattedDate}
         </time>
       </header>
-      <div className="mt-8 prose dark:prose-invert">
+      <div className="mt-8">
         <Markdown components={customRenderers}>
           {body}
         </Markdown>

@@ -1,19 +1,64 @@
 import MailIcon from "../icons/MailIcon";
 import WorkExperience from "./WorkExperience";
-import { useState } from "react";
+import Notification from "../layout/Notification";
+import { useState, useEffect } from "react";
 
 const EmailSignup = () => {
   const [emailSignUp, setEmailSignUp] = useState("");
+  const [requestStatus, setRequestStatus] = useState();
+
+  useEffect(() => {
+    if (requestStatus === "success" || requestStatus === "error") {
+      const timer = setTimeout(() => {
+        // reset the requestStatus after 3 secs if success or error
+        setRequestStatus(null);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [requestStatus]);
+
+  let notification;
+
+  if (requestStatus === "success") {
+    notification = {
+      status: "success",
+      title: "Success!",
+      message: "You have successfully signed up!",
+    };
+  }
+
+  if (requestStatus === "pending") {
+    notification = {
+      status: "success",
+      title: "Working on it!",
+      message: "We're working on your request...",
+    };
+  }
 
   function emailSignUpHandler(event) {
     event.preventDefault();
 
-    console.log(emailSignUp);
-  };
+    setRequestStatus("pending");
+
+    try {
+      // add api here to send data to db
+      console.log(emailSignUp);
+      setRequestStatus("success");
+      setEmailSignUp("");
+    } catch (error) {
+      console.log(error);
+      setRequestStatus("error");
+      return;
+    }
+  }
 
   return (
     <div className="max-md:mr-0 flex flex-col gap-16 mr-48">
-      <form className="rounded-2xl border border-zinc-100 p-6" onSubmit={emailSignUpHandler}>
+      <form
+        className="rounded-2xl border border-zinc-100 p-6"
+        onSubmit={emailSignUpHandler}
+      >
         <h2 className="flex text-sm font-semibold text-zinc-900">
           <MailIcon />
           <span className="ml-3">Stay up to date</span>
@@ -36,6 +81,13 @@ const EmailSignup = () => {
         </div>
       </form>
       <WorkExperience />
+      {notification && (
+        <Notification
+          status={notification.status}
+          message={notification.message}
+          title={notification.title}
+        />
+      )}
     </div>
   );
 };
