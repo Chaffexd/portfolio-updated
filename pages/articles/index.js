@@ -17,14 +17,13 @@ const ArticlePage = ({ posts }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allPosts = await getAllPosts();
 
   return {
     props: {
       posts: allPosts,
     },
-    revalidate: 1800,
   };
 }
 
