@@ -8,14 +8,14 @@ const WorkItem = ({ company, role, startDate, endDate, source }) => {
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
-        <dt className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        <dt className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-white">
           {company}
         </dt>
         <dt className="sr-only">Role</dt>
-        <dt className="text-xs text-zinc-500 dark:text-zinc-400">
+        <dt className="text-xs text-zinc-500 dark:text-white">
           {role}
         </dt>
-        <dd className="ml-auto text-xs text-zinc-400 dark:text-zinc-500">
+        <dd className="ml-auto text-xs text-zinc-400 dark:text-white">
           <time dateTime="2023">{startDate}</time>
           <span>-</span>
           <time dateTime="2023">{endDate}</time>

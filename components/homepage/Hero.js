@@ -24,7 +24,7 @@ const Hero = ({ posts }) => {
         <h1 className="mb-4 text-4xl text-zinc-800 font-bold dark:text-zinc-100">
           Software Developer, Frontend Engineer, and Poodle enthusiast...
         </h1>
-        <p className="mt-6 text-zinc-600 text-base ">
+        <p className="mt-6 text-zinc-600 text-base dark:text-zinc-400">
           I'm Shane, a Customer Support Engineer and developer based in London,
           UK. I enjoy fixing things that are broken and creating things from
           scratch.

@@ -56,14 +56,14 @@ const EmailSignup = () => {
   return (
     <div className="max-md:mr-0 flex flex-col gap-16 mr-48">
       <form
-        className="rounded-2xl border border-zinc-100 p-6"
+        className="rounded-2xl border border-zinc-100 p-6 "
         onSubmit={emailSignUpHandler}
       >
-        <h2 className="flex text-sm font-semibold text-zinc-900">
+        <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-white">
           <MailIcon />
           <span className="ml-3">Stay up to date</span>
         </h2>
-        <p className="mt-2 text-sm text-zinc-600">
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
           Get notified when I decide to write something, up to you!
         </p>
         <div className="mt-6 flex">
