@@ -41,7 +41,7 @@ const PostDetail = ({ post }) => {
     <article>
       <header className="flex flex-col">
         <button className="mt-6 dark:text-white">
-          <Link href={"/articles/"}>
+          <Link href={"/articles/"} aria-label="Articles">
             <LeftChevron />
           </Link>
         </button>

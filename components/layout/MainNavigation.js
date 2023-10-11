@@ -12,13 +12,13 @@ const MainNavigation = () => {
         </div>
         <div>
           <div className="w-60 flex justify-between border border-slate-200 rounded-3xl px-6 py-2">
-            <Link href={"/about"} className="hover:text-teal-500">
+            <Link href={"/about"} className="hover:text-teal-500" aria-label="About">
               About
             </Link>
-            <Link href={"/articles"} className="hover:text-teal-500">
+            <Link href={"/articles"} className="hover:text-teal-500" aria-label="Articles">
               Articles
             </Link>
-            <Link href={"/projects"} className="hover:text-teal-500">
+            <Link href={"/projects"} className="hover:text-teal-500" aria-label="Projects">
               Projects
             </Link>
           </div>

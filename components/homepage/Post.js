@@ -15,7 +15,7 @@ const Post = ({ posts }) => {
         {formattedDate}
       </time>
       <h2 className="text-base font-semibold text-zinc-800 dark:text-white">{posts?.fields.postTitle}</h2>
-      <Link href={`/articles/${pageSlug}`}>
+      <Link href={`/articles/${pageSlug}`} aria-label={posts?.fields.postTitle}>
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
         <span className="relative z-10"></span>
       </Link>
