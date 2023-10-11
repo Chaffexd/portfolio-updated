@@ -16,9 +16,9 @@ const WorkItem = ({ company, role, startDate, endDate, source }) => {
           {role}
         </dt>
         <dd className="ml-auto text-xs text-zinc-400 dark:text-white">
-          <time dateTime="2023">{startDate}</time>
+          <time dateTime="2023" className="text-zinc-600">{startDate}</time>
           <span>-</span>
-          <time dateTime="2023">{endDate}</time>
+          <time dateTime="2023" className="text-zinc-600">{endDate}</time>
         </dd>
       </dl>
     </li>
