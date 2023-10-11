@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Hero from "@/components/homepage/Hero";
 import { getAllPosts } from "@/helpers/post-util";
 import Head from "next/head";

@@ -14,7 +14,7 @@ const ImageGallery = () => {
       </div>
       <div className="relative aspect-[9/10] flex-none w-1/5 overflow-hidden rounded-xl -rotate-2"> 
         <Image
-          src={"/images/me.jpeg"}
+          src={"/images/pg.jpeg"}
           className="h-full w-full object-cover"
           alt="A photo"
           width={400}
@@ -23,7 +23,7 @@ const ImageGallery = () => {
       </div>
       <div className="relative aspect-[9/10] flex-none w-1/5 overflow-hidden rounded-xl rotate-2"> 
         <Image
-          src={"/images/me.jpeg"}
+          src={"/images/berlin.jpg"}
           className="h-full w-full object-cover"
           alt="A photo"
           width={400}
@@ -32,16 +32,16 @@ const ImageGallery = () => {
       </div>
       <div className="relative aspect-[9/10] flex-none w-1/5 overflow-hidden rounded-xl rotate-2"> 
         <Image
-          src={"/images/me.jpeg"}
+          src={"/images/mountain.jpg"}
           className="h-full w-full object-cover"
           alt="A photo"
           width={400}
           height={400}
         />
       </div>
-      <div className="relative aspect-[9/10] flex-none w-1/5 overflow-hidden rounded-xl rotate-2"> 
+      <div className="relative aspect-[9/10] flex-none w-1/5 overflow-hidden rounded-xl -rotate-2"> 
         <Image
-          src={"/images/me.jpeg"}
+          src={"/images/arsenal.jpg"}
           className="h-full w-full object-cover"
           alt="A photo"
           width={400}

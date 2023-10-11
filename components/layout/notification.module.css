@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: hsl(265, 19%, 88%);
+    color: white;
     background-color: hsl(276, 5%, 20%);
     padding: 0 2rem;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -21,11 +21,11 @@
   
   .notification p {
     margin: 0;
+    color: white;
   }
   
   .success {
     background-color: #2ba052;
-    color: hsl(276, 5%, 20%);
   }
   
   .error {

@@ -1,3 +1,4 @@
+import AllProjects from "@/components/projects/AllProjects";
 import Head from "next/head";
 
 const ProjectsPage = () => {
@@ -10,7 +11,9 @@ const ProjectsPage = () => {
           content={"Shane Chaffe's Projects"}
         />
       </Head>
-      <div className="flex justify-center mt-20">Coming soon...</div>
+      <div className="flex justify-center flex-col items-center mt-20">
+        <AllProjects />
+      </div>
     </>
   );
 };
