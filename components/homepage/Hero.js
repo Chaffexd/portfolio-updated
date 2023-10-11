@@ -14,7 +14,7 @@ const Hero = ({ posts }) => {
         <Link href={"/"} className="block w-1/6 mb-4">
           <Image
             className="rounded-full object-cover h-16 w-16"
-            src={"/images/me.jpeg"}
+            src={"/images/me.webp"}
             width={80}
             height={80}
             alt="A photo of me, Shane"
