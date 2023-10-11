@@ -6,7 +6,7 @@ const DUMMY_DATA = [
     title: "Project Title",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    imageSource: "/images/arsenal.jpg",
+    imageSource: "/images/arsenal.webp",
     link: "https://github.com/Chaffexd"
   },
   {
@@ -14,7 +14,7 @@ const DUMMY_DATA = [
     title: "Project Title",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    imageSource: "/images/arsenal.jpg",
+    imageSource: "/images/arsenal.webp",
     link: "https://github.com/Chaffexd"
   },
   {
@@ -30,7 +30,7 @@ const DUMMY_DATA = [
 const AllProjects = () => {
   return (
     <>
-      <h1 className="text-white">Coming soon..</h1>
+      <h1 className="text-black dark:text-white">Coming soon..</h1>
       {DUMMY_DATA.map((project) => (
         <ProjectDetail
             key={project.id}
