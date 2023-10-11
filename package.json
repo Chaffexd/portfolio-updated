@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.0",
     "contentful": "^10.6.1",
     "next": "latest",
     "react": "latest",
