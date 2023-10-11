@@ -41,8 +41,8 @@ In addition to the stack used to build this portfolio, I have experience with a 
 
 If you'd like to get in touch with me to discuss potential collaborations, job opportunities, or just to say hello, please feel free to reach out:
 
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- GitHub: [Your GitHub Profile](https://github.com/your-username)
+- Email: [your.email@example.com](mailto:shanechaffe@gmail.com)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/shane-chaffe/)
+- GitHub: [Your GitHub Profile](https://github.com/Chaffexd)
 
 Thank you for visiting my portfolio, and I look forward to connecting with you!
