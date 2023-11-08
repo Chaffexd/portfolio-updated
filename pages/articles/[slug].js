@@ -43,6 +43,7 @@ export async function getStaticProps({ params }) {
     props: {
       post: postData,
     },
-    revalidate: 1800,
+    // revalidate sooner to make new data available quicker
+    revalidate: 10,
   };
 }
