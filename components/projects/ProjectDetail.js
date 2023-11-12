@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectDetail = ({ title, excerpt, imageSource, link }) => {
+const ProjectDetail = ({ title, excerpt, imageSource, link, repoLink }) => {
   return (
-    <div className="bg-zinc-400 lg:w-3/4 lg:flex-row sm:p-16 sm:w-1/2 rounded-lg flex flex-col items-center p-4 dark:bg-zinc-700 mb-8">
+    <div className="bg-slate-100 lg:w-3/4 lg:flex-row sm:p-16 sm:w-1/2 rounded-lg flex flex-col items-center p-4 dark:bg-zinc-700 mb-8 hover:bg-zinc-200">
       <div className="lg:w-1/2">
         <Image
           src={imageSource}
@@ -14,9 +14,10 @@ const ProjectDetail = ({ title, excerpt, imageSource, link }) => {
         />
       </div>
       <div className="lg:w-1/2 p-8 text-inherit">
-        <h1 className="dark:text-white">{title}</h1>
-        <p className="text-white">{excerpt}</p>
-        <p className="text-white">You can view the project <Link href={link} target="_blank"><span className="text-black hover:text-teal-500 dark:hover:text-teal-500">here.</span></Link></p>
+        <h1 className="dark:text-white text-black">{title}</h1>
+        <p className="text-black dark:text-white">{excerpt}</p>
+        <p className="text-black dark:text-white">You can view the project <Link href={link} target="_blank"><span className="text-black font-bold hover:text-teal-500 dark:hover:text-teal-500 dark:text-white">here.</span></Link></p>
+        <p className="text-black dark:text-white">You can view repository <Link href={repoLink} target="_blank"><span className="text-black font-bold hover:text-teal-500 dark:hover:text-teal-500 dark:text-white">here.</span></Link></p>
       </div>
     </div>
   );
