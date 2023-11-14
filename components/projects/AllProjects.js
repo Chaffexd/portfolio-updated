@@ -21,6 +21,15 @@ const projectData = [
   },
   {
     id: "p3",
+    title: "Dave's Painting and Decorating",
+    excerpt:
+      "This website is a website built for a local business to display their services to their customers and allow them to obtain a better presence online - built with Vite and React + Tailwind CSS.",
+    imageSource: "/images/davespd.webp",
+    link: "https://davespd.com/",
+    repo: "https://github.com/Chaffexd/daves-pd-2.0"
+  },
+  {
+    id: "p4",
     title: "Job Listing Site",
     excerpt:
       "Effortlessly navigate job listings with our React project, built on Vite with custom CSS. Enjoy a sleek interface and easily filter job types for a seamless job-search experience.",
@@ -29,7 +38,7 @@ const projectData = [
     repo: "https://github.com/Chaffexd/job-list-site"
   },
   {
-    id: "p4",
+    id: "p5",
     title: "Dev Finder",
     excerpt:
       "Discover developers effortlessly with this Dev Finder app. Built on Vite, styled with Tailwind, and leveraging the GitHub API, it seamlessly fetches user information. Toggle between light and dark modes for a personalized browsing experience.",
@@ -38,7 +47,7 @@ const projectData = [
     repo: "https://github.com/Chaffexd/github-user-app"
   },
   {
-    id: "p5",
+    id: "p6",
     title: "ToDo Application",
     excerpt:
       "Elevate your task management with this Todo app, crafted with Vite and Tailwind. Enjoy seamless filtering, a sleek dark mode toggle, and the convenience of drag-and-drop task reordering. Simplify your productivity journey with this feature-packed application.",
@@ -47,14 +56,15 @@ const projectData = [
     repo: "https://github.com/Chaffexd/todo-app"
   },
   {
-    id: "p6",
+    id: "p7",
     title: "Age calculator application",
     excerpt:
       "Empower your time management with this Vite React Age Calculator app. Swiftly calculate ages with precision and ease. Built for efficiency, this app provides a seamless experience for all your age-related calculations.",
     imageSource: "/images/agecalc.webp",
     link: "https://age-calculator-phi.vercel.app/",
     repo: "https://github.com/Chaffexd/age-calculator"
-  }
+  },
+
 ];
 
 const AllProjects = () => {
