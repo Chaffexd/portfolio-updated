@@ -51,7 +51,7 @@ const projectData = [
     title: "Front End Quiz",
     excerpt:
       "Conquered my first challenge using TypeScript, Tailwind CSS, and React. Embraced TypeScript's clarity, streamlined with Tailwind's utility classes, and leveraged React's power for a dynamic and scalable project.",
-    imageSource: "/images/todoapp.webp",
+    imageSource: "/images/frontend-quiz.webp",
     link: "https://frontend-quiz-chi.vercel.app/",
     repo: "https://github.com/Chaffexd/frontend-quiz"
   },
