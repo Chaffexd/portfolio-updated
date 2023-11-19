@@ -48,6 +48,15 @@ const projectData = [
   },
   {
     id: "p6",
+    title: "Front End Quiz",
+    excerpt:
+      "Conquered my first challenge using TypeScript, Tailwind CSS, and React. Embraced TypeScript's clarity, streamlined with Tailwind's utility classes, and leveraged React's power for a dynamic and scalable project.",
+    imageSource: "/images/todoapp.webp",
+    link: "https://frontend-quiz-chi.vercel.app/",
+    repo: "https://github.com/Chaffexd/frontend-quiz"
+  },
+  {
+    id: "p7",
     title: "ToDo Application",
     excerpt:
       "Elevate your task management with this Todo app, crafted with Vite and Tailwind. Enjoy seamless filtering, a sleek dark mode toggle, and the convenience of drag-and-drop task reordering. Simplify your productivity journey with this feature-packed application.",
@@ -56,7 +65,7 @@ const projectData = [
     repo: "https://github.com/Chaffexd/todo-app"
   },
   {
-    id: "p7",
+    id: "p8",
     title: "Age calculator application",
     excerpt:
       "Empower your time management with this Vite React Age Calculator app. Swiftly calculate ages with precision and ease. Built for efficiency, this app provides a seamless experience for all your age-related calculations.",
