@@ -20,6 +20,15 @@ const projectData = [
     repo: "https://github.com/Chaffexd/movie-app"
   },
   {
+    id: "p9",
+    title: "The Product Feedback App",
+    excerpt:
+      "Built with TypeScript, Next.js, React, Tailwind CSS, and Firebase, it offers a responsive and efficient solution. Easily manage feedback, track progress on the roadmap, and foster real-time collaboration. It also utilises Next Auth for authentication!",
+    imageSource: "/images/product-feedback.webp",
+    link: "https://product-feedback-app-beta.vercel.app/",
+    repo: "https://github.com/Chaffexd/product-feedback-app"
+  },
+  {
     id: "p3",
     title: "Dave's Painting and Decorating",
     excerpt:
