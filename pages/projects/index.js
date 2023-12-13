@@ -11,7 +11,7 @@ const ProjectsPage = () => {
           content={"Shane Chaffe's Projects"}
         />
       </Head>
-      <div className="flex justify-center flex-col items-center mt-20">
+      <div className="flex justify-center flex-col items-center mt-20 px-4">
         <AllProjects />
       </div>
     </>

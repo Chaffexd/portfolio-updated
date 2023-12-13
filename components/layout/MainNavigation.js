@@ -3,7 +3,7 @@ import Switcher from "./Switcher";
 
 const MainNavigation = () => {
   return (
-    <header className="max-sm:mx-0 flex justify-center mx-48">
+    <header className="max-sm:mx-0 flex justify-center md:mx-48 px-4">
       <nav className="flex mt-6 items-center justify-between min-w-full dark:text-white">
         <div>
           <Link href={"/"} className="hover:text-teal-500">

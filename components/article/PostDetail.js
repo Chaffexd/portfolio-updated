@@ -52,8 +52,8 @@ const PostDetail = ({ post }) => {
           {formattedDate}
         </time>
       </header>
-      <div className="mt-8">
-        <Markdown components={customRenderers} className="dark:text-white">
+      <div className="mt-8 dark:text-zinc-100">
+        <Markdown components={customRenderers} >
           {body}
         </Markdown>
       </div>

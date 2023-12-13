@@ -22,7 +22,7 @@ const AboutSocials = () => {
             </Link>
         </li>
         <li className="mt-14 pt-8 dark:border-zinc-700/40 flex">
-            <a href="mailto:shanechaffe@gmail.com" aria-label="Email" className="group border-t border-zinc-100 pt-4 flex items-center text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500">
+            <a href="mailto:shanechaffe@gmail.com" aria-label="Email" className="group border-t border-zinc-100 pt-4 flex items-center text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500 w-full">
                 <MailIcon />
                 <span className="ml-4 mb-0">shanechaffe@gmail.com</span>
             </a>
