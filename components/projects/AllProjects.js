@@ -11,6 +11,15 @@ const projectData = [
     repo: "https://github.com/Chaffexd/countries-app"
   },
   {
+    id: "p9",
+    title: "The Product Feedback App",
+    excerpt:
+      "Built with TypeScript, Next.js, React, Tailwind CSS, and Firebase, it offers a responsive and efficient solution. Easily manage feedback, track progress on the roadmap, and foster real-time collaboration. It also utilises Next Auth for authentication!",
+    imageSource: "/images/product-feedback.webp",
+    link: "https://product-feedback-app-beta.vercel.app/",
+    repo: "https://github.com/Chaffexd/product-feedback-app"
+  },
+  {
     id: "p2",
     title: "The Movie Database App",
     excerpt:
@@ -20,13 +29,13 @@ const projectData = [
     repo: "https://github.com/Chaffexd/movie-app"
   },
   {
-    id: "p9",
-    title: "The Product Feedback App",
+    id: "p10",
+    title: "Devjobs App",
     excerpt:
-      "Built with TypeScript, Next.js, React, Tailwind CSS, and Firebase, it offers a responsive and efficient solution. Easily manage feedback, track progress on the roadmap, and foster real-time collaboration. It also utilises Next Auth for authentication!",
-    imageSource: "/images/product-feedback.webp",
-    link: "https://product-feedback-app-beta.vercel.app/",
-    repo: "https://github.com/Chaffexd/product-feedback-app"
+      "Built with TypeScript, Next.js, TypeScript, Tailwind CSS, as a full responsive job search site. Track a job that you might be interested in!",
+    imageSource: "/images/devjobs.webp",
+    link: "https://devjobs-app-two.vercel.app/",
+    repo: "https://github.com/Chaffexd/devjobs-app"
   },
   {
     id: "p3",
